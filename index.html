@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Github User Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="p-5 lg:container mx-auto lg:py-4 lg:px-48">
+      <h1 class="text-6xl font-bold mb-5 lg:text-2xl lg:font-bold lg:mb-4">
+        Github User Search
+      </h1>
+      <div class="flex flex-col space-y-3 lg:flex-row mb-4">
+        <input
+          type="text"
+          class="text-4xl flex-1 rounded-l-lg lg:rounded-l-lg px-4 py-2 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white focus:outline-none focus:border-gray-500"
+          id="username-input"
+          placeholder="Enter Github username"
+        />
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white lg:font-bold py-3 text-4xl lg:py-2 lg:px-4 rounded-lg lg:rounded-r-lg"
+          id="search-btn"
+        >
+          Search
+        </button>
+      </div>
+      <div id="user-details"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
